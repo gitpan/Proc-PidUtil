@@ -8,7 +8,7 @@ use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
 require Exporter;
 @ISA = qw(Exporter);
 
-$VERSION = do { my @r = (q$Revision: 0.06 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+$VERSION = do { my @r = (q$Revision: 0.07 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 
 %EXPORT_TAGS = (
   all	=> [qw(
@@ -107,6 +107,8 @@ sub is_running {
   local $_ = <PID> || 0;		# get pid
   close PID;
   chomp;
+  /^\d+$/;
+  $_  = $&;
   return 0 unless $_ && $_ !~ /\D/;	# skip bogus pid files
   return (kill 0, $_) ? $_ : 0;
 }

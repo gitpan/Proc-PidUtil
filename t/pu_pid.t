@@ -30,7 +30,8 @@ foreach my $dir (qw(tmp)) {
     @_ = grep(!/^\./, readdir(T));
     closedir T;
     foreach(@_) {
-      unlink "$dir/$_";
+     /.+/;		# allow for testing with -T switch
+      unlink "$dir/$&";
     }
     rmdir $dir or die "COULD NOT REMOVE $dir DIRECTORY\n";
   }

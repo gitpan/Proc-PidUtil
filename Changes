@@ -1,0 +1,6 @@
+Revision history for Perl extension Proc::PidUtil
+
+0.06  Tue Mar  12 12:42:10 PST 2004
+	initial release
+
+	converted from Mail::SpamCannibal::PidUtil v0.05

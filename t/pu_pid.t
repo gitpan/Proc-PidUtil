@@ -44,7 +44,7 @@ sub ok {
 }
 
 my $path = './tmp';
-mkdir $path;
+mkdir $path,0755;
 
 $path .= '/';
 

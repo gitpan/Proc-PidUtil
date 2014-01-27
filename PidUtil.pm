@@ -8,7 +8,7 @@ use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
 require Exporter;
 @ISA = qw(Exporter);
 
-$VERSION = do { my @r = (q$Revision: 0.08 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+$VERSION = do { my @r = (q$Revision: 0.09 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 
 %EXPORT_TAGS = (
   all	=> [qw(
@@ -188,7 +188,7 @@ sub get_script_name {
 
 =head1 COPYRIGHT
 
-Copyright 2003 -2004, Michael Robinton <michael@bizsystems.com>
+Copyright 2003 -2014, Michael Robinton <michael@bizsystems.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

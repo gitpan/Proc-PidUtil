@@ -1,5 +1,8 @@
 Revision history for Perl extension Proc::PidUtil
 
+0.09  Mon Jan 27 11:59:58 PST 2014
+        modify Makefile.PL to bypass missing 'pod2text'
+
 0.08  Mon Sep 11 18:54:05 PDT 2006
 	'mkdir' updated from comptability with perl 5.0503
 
